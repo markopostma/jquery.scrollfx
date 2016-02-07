@@ -1,9 +1,14 @@
-# jquery.scrollfx (currently in development)
+# jquery.scrollfx
 
 A jQuery plugin that adds some cool effects when a user scrolls down the page.
-What is basically does is calculate the distance from the top and the bottom of the selector that the user has scrolled down to determine how the selector should change it's appearance.
+
+What is basically does is calculate the distance from the top to bottom of the selector when the user has scrolled down to determine how the selector should change it's appearance with CSS attributes.
 
 I wrote the plugin for a private project, but I thought why not share it with the world.
+
+If you want to see a working example visit <http://marksten.github.io/jquery.scrollfx>
+
+NOTE: This plugin is currently in development.
 
 # Installation
 
@@ -33,6 +38,9 @@ The elements that should change their opacity attribute. Joined with a ','.
 This option effects the overall performance of your website. The higher the precision, the 'smoother' the effects.
 If you don't want to overheat your users' GPU or CPU your should reduce this number.
 
+# Compatibility
+This plugin has been tested on Google Chrome, Safari (retina display) and on an iPhone6.
+
 # Development
 
 ### v 0.0.1 (7 february 2016)
@@ -49,3 +57,4 @@ If you don't want to overheat your users' GPU or CPU your should reduce this num
 + Add more options
 + Write unit tests
 + Do some Browser Compatibility tests
++ Do some performance testing on different devices

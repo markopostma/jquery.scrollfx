@@ -2,7 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+
 <title>Demo of jquery.scrollfx</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -24,12 +32,16 @@
 <header id="top">
   <div class="container">
     <div class="row">
-      <h1>jquery<span class="hidden-sm hidden-xs">.</span><br>scrollfx</h1>
-      <p class="lead">A jQuery plugin that adds some cool effects when a user scrolls down the page</p>
-
-      <div class="buttons">
-        <a href="http://github.com/marksten/jquery.scrollfx" class="btn btn-lg btn-primary">Download</a>
-        <a href="http://github.com/marksten/jquery.scrollfx" class="btn btn-lg btn-success">View code</a>
+      <div class="col-xs-12">
+        <h1>jquery<span class="hidden-sm hidden-xs">.</span><br><span class="text-success">scrollfx</span></h1>
+        <p class="lead">A jQuery plugin that adds some cool effects when a user scrolls down the page</p>
+        <br>
+        <div class="buttons">
+          <a href="http://github.com/marksten/jquery.scrollfx" class="btn btn-lg btn-success">
+            <i class="fa fa-github"></i>
+            Download from github
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -46,7 +58,10 @@
         <p class="lead">
           Scroll down to see these texts scale down and see the background change it's opacity.
         </p>
-        <a href="#top" class="btn btn-lg btn-primary" data-to-top>Scroll to top</a>
+        <a href="#top" class="btn btn-lg btn-primary" data-to-top>
+          Scroll to top
+          <i class="fa fa-chevron-top"></i>
+        </a>
       </div>
     </div>
   </div>
