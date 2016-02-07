@@ -52,7 +52,7 @@ This plugin has been tested on Google Chrome, Safari (retina display) and on an 
 + Used Grunt for local development
 
 ### Future development
-+ Release the release available for npm
++ Make release available for npm
 + Add more effects
 + Add more options
 + Write unit tests
