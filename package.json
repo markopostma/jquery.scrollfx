@@ -3,8 +3,11 @@
   "description": "A jQuery plugin that adds some cool effects when a user scrolls down a page",
   "version": "0.0.1",
   "author": "Marko Postma",
-  "author_email": "marksten10@gmail.com",
   "author_url": "http://github.com/marksten",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marksten/jquery.scrollfx"
+  },
   "readmeFilename": "README.md",
   "license": "MIT",
   "main": "dist/jquery.scrollfx.js",
