@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo of jquery.scrollfx</title>
+<link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="assets/js/jquery.scrollfx.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('section, header').scrollFx({
+      precision: 5,
+      scaleElements: '.row',
+      opacityElements: '.image'
+    });
+  });
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <h1>jquery.scrollfx</h1>
+      <p class="lead">A jQuery plugin that adds some fx when a user scrolls a webpage</p>
+
+      <div class="buttons">
+        <a href="http://github.com/marksten/jquery.scrollfx" class="btn btn-lg btn-primary">Download</a>
+        <a href="http://github.com/marksten/jquery.scrollfx" class="btn btn-lg btn-success">View code</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="first" class="container-fluid">
+  <div class="image"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+      <h1>First section with an animation</h1>
+      <p class="lead"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="second" class="container-fluid">
+  <div class="image"></div>
+</section>
+
+<section id="third" class="container-fluid">
+  <div class="image"></div>
+</section>
+
+<section id="fourth" class="container-fluid">
+  <div class="image"></div>
+</section>
+
+<footer>
+</footer>
+
+</body>
+
+</html>

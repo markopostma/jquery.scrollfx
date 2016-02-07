@@ -1,0 +1,63 @@
+@import "includes/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700,800");
+
+body {
+  background-color: $brand-primary;
+}
+
+header {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 250px 0;
+  h1 {
+    text-transform: uppercase;
+    font-size: 6em;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  min-height: 700px;
+  padding: 200px 0;
+  color: #fff;
+
+  > .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  &#first {
+    > .image {
+      background-image: url('../img/image-1.jpg');
+    }
+  }
+
+  &#second {
+    > .image {
+      background-image: url('../img/image-2.jpg');
+    }
+  }
+
+  &#third {
+    > .image {
+      background-image: url('../img/image-3.jpg');
+    }
+  }
+
+  &#fourth {
+    > .image {
+      background-image: url('../img/image-4.jpg');
+    }
+  }
+}
