@@ -1,6 +1,6 @@
 {
   "name": "jquery.scrollfx",
-  "description": "A jQuery plugin that adds some fx when a user scrolls a webpage",
+  "description": "A jQuery plugin that adds some cool effects when a user scrolls down a page",
   "version": "0.0.1",
   "author": "Marko Postma",
   "author_email": "marksten10@gmail.com",
@@ -16,6 +16,7 @@
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "0.8.0",
     "grunt-contrib-watch": "^0.5.3",
-    "grunt-jsbeautifier": "^0.2.10"
+    "grunt-jsbeautifier": "^0.2.10",
+    "grunt-libsass": "^0.2.1"
   }
 }

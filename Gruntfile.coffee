@@ -6,6 +6,8 @@ module.exports = (grunt) ->
     coffee:
       default:
         files: 'dist/<%= pkg.name %>.js': ['src/<%= pkg.name %>.coffee']
+      demo:
+        files: 'demo/assets/js/demo.js': ['demo/assets/coffee/demo.coffee']
 
     copy:
       demo:
@@ -17,7 +19,6 @@ module.exports = (grunt) ->
         options:
           style: 'compressed'
           sourcemap: 'none'
-          sourceComments: false
         files: 'demo/assets/css/demo.css': 'demo/assets/scss/demo.scss'
 
     uglify:
@@ -34,8 +35,8 @@ module.exports = (grunt) ->
         files: ['src/<%= pkg.name %>.coffee']
         tasks: ['default']
       demo:
-        files: ['demo/assets/scss/**/*.scss']
-        tasks: ['sass:demo']
+        files: ['demo/assets/scss/**/*.scss', 'demo/assets/coffee/**/*.coffee']
+        tasks: ['sass:demo', 'coffee:demo']
 
     coffeelint:
       default: ['src/*.coffee']
@@ -50,4 +51,4 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   # Default task.
-  grunt.registerTask 'default', ['coffeelint', 'coffee', 'uglify', 'copy']
+  grunt.registerTask 'default', ['coffeelint', 'coffee:default', 'uglify', 'copy']

@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="assets/js/jquery.scrollfx.js"></script>
 
 <script>
   $(document).ready(function(){
@@ -22,11 +21,11 @@
 
 <body>
 
-<header>
+<header id="top">
   <div class="container">
     <div class="row">
-      <h1>jquery.scrollfx</h1>
-      <p class="lead">A jQuery plugin that adds some fx when a user scrolls a webpage</p>
+      <h1>jquery<span class="hidden-sm hidden-xs">.</span><br>scrollfx</h1>
+      <p class="lead">A jQuery plugin that adds some cool effects when a user scrolls down the page</p>
 
       <div class="buttons">
         <a href="http://github.com/marksten/jquery.scrollfx" class="btn btn-lg btn-primary">Download</a>
@@ -42,8 +41,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-6">
-      <h1>First section with an animation</h1>
-      <p class="lead"></p>
+        <h2>First section with an animation</h2>
+        <hr>
+        <p class="lead">
+          Scroll down to see these texts scale down and see the background change it's opacity.
+        </p>
+        <a href="#top" class="btn btn-lg btn-primary" data-to-top>Scroll to top</a>
       </div>
     </div>
   </div>
@@ -51,18 +54,57 @@
 
 <section id="second" class="container-fluid">
   <div class="image"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Second section with an animation</h2>
+        <hr>
+        <p class="lead">
+          Scroll down to see these texts scale down and see the background change it's opacity.
+        </p>
+        <a href="#top" class="btn btn-lg btn-primary" data-to-top>Scroll to top</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="third" class="container-fluid">
   <div class="image"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+        <h2>Third section with an animation</h2>
+        <hr>
+        <p class="lead">
+          Scroll down to see these texts scale down and see the background change it's opacity.
+        </p>
+        <a href="#top" class="btn btn-lg btn-primary" data-to-top>Scroll to top</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="fourth" class="container-fluid">
   <div class="image"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Last section with an animation</h2>
+        <hr>
+        <p class="lead">
+          Scroll down to see these texts scale down and see the background change it's opacity.
+        </p>
+        <a href="#top" class="btn btn-lg btn-primary" data-to-top>Scroll to top</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
 </footer>
+
+<script src="assets/js/jquery.scrollfx.js"></script>
+<script src="assets/js/demo.js"></script>
 
 </body>
 
