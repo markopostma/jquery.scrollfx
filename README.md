@@ -12,7 +12,13 @@ NOTE: This plugin is currently in development.
 
 # Installation
 
-Find `jquery.scrollfx.js` in the `dist/` directory. Make sure to include it after jQuery.
+### NPM
+```bash
+npm install jquery.scrollfx --save
+```
+
+### Manually
+Find `jquery.scrollfx.js` in the root directory. Make sure to include it after jQuery.
 
 # Usage
 
@@ -40,21 +46,3 @@ If you don't want to overheat your users' GPU or CPU your should reduce this num
 
 # Compatibility
 This plugin has been tested on Google Chrome, Safari (retina display) and on an iPhone6.
-
-# Development
-
-### v 0.0.1 (7 february 2016)
-+ Added scalable elements
-+ Added opacity elements
-+ Added basic options
-+ Added a demo
-+ Added basic readme file
-+ Used Grunt for local development
-
-### Future development
-+ Make release available for npm
-+ Add more effects
-+ Add more options
-+ Write unit tests
-+ Do some Browser Compatibility tests
-+ Do some performance testing on different devices

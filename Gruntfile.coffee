@@ -10,9 +10,11 @@ module.exports = (grunt) ->
         files: 'demo/assets/js/demo.js': ['demo/assets/coffee/demo.coffee']
 
     copy:
-      demo:
-        src: 'dist/<%= pkg.name %>.js'
-        dest: 'demo/assets/js/<%= pkg.name %>.js'
+      release:
+        files: [
+          { src: 'dist/<%= pkg.name %>.js', dest: 'demo/assets/js/<%= pkg.name %>.js' }
+          { expand: true, flatten: true, src: 'dist/**/*.js', dest: '.' }
+        ]
 
     sass:
       demo:
@@ -51,4 +53,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   # Default task.
-  grunt.registerTask 'default', ['coffeelint', 'coffee:default', 'uglify', 'copy']
+  grunt.registerTask 'default', ['coffeelint', 'coffee:default', 'uglify']
+  grunt.registerTask 'release', ['default', 'copy:release']
